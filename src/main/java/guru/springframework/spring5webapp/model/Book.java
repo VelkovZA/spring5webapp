@@ -31,17 +31,4 @@ public class Book {
         this.publisher = publisher;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Book)) return false;
-        Book book = (Book) o;
-        return Objects.equals(getId(), book.getId());
-    }
-
-    @Override
-    public int hashCode() {
-
-        return Objects.hash(getId());
-    }
 }
